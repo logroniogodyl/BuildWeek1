@@ -1,0 +1,690 @@
+@media screen and (min-width: 769px){
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+    }
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*position: fixed;*/
+        background-color: black;
+        height: 30px;
+        width: 100%;
+        z-index: 99;
+        margin: 0;
+    }
+
+    .top h1 {
+        color: white;
+        font-size: 1.1rem;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+        height: 96.8vh;
+    }
+
+
+    /*PARTE LATERALE DX DELLA WEB APP*/
+    .side-navbar {
+        background-color: #171B2A;
+        width: 10%;
+        font-family: "Abel", sans-serif;
+        font-size: 1.1rem;
+        color: white;
+        padding-top: 10px;
+    }
+
+    .navbar-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5vw;
+        margin-bottom: 1%;
+        height: 5%;
+    }
+
+    .navbar-button:hover{
+        background-color: #343647;
+        border-right: 5px solid white;
+        cursor: pointer;
+    }
+
+    .navbar-button a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar-button img {
+        height: 4.5vh;
+        min-height: 4vh;
+    }
+
+    .navbar-button p {
+        margin-left: 1em;
+    }
+
+    .navbar-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 66vh;
+        height: 10%;
+        padding: 0 15% 0 15%;
+    }
+
+    .navbar-logo img {
+        height: 9vh;
+    }
+
+    .navbar-logo img:hover {
+        height: 9vh;
+    }
+
+
+    /*PARTE CENTRALE DELLA WEB APP*/
+    .main {
+        background-image: url("../images/maintheme2.jpg");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        width: 77%;
+        overflow-y: scroll;
+    }
+
+    .main::-webkit-scrollbar {
+        width: 0px;
+        /*background-color: #262d3d79;*/
+        border-radius: 12px;
+    }
+    
+    .main::-webkit-scrollbar-thumb {
+        background-color: #D4EF99;
+        border-radius: 10px;
+    }
+    
+    .main::-webkit-scrollbar-thumb:hover {
+        background-color: #D4EF99;
+    }
+    
+    /* nascondi i pulsanti di scorrimento */
+    .main::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    /*DESCRIZIONE DEL GIOCO IN EVIDENZA/COPERTINA*/
+    .main-game {
+        margin: 1.5% auto 1.5% 50px;
+    }
+
+    .description-of-game {
+        color: white;
+        font-family: "Quicksand", sans-serif;
+        width: 40%;
+        padding: 1%;
+    }
+
+    .description-of-game>h2 {
+        font-family: "PT Sans Narrow", sans-serif;
+        font-size: 5em;
+        margin-bottom: 1%;
+    }
+
+    .description-of-game>h3 {
+        font-size: 1.5em;
+        margin-bottom: 13px;
+    }
+
+    .description-of-game>p {
+        font-size: 1.2rem;
+    }
+
+    .description-of-game button {
+        min-height: 5vh;
+        width: 50%;
+        border-radius: 5px;
+        background-color: #276AFC;
+        cursor: pointer;
+        border: none;
+        color: white;
+        font-family: "Quicksand", sans-serif;
+        font-size: 1em;
+    }
+
+    .description-of-game button:focus {
+        outline: none;
+    }
+
+    .description-of-game button:hover {
+        background-color: #4C85F7;
+    }
+
+    #carouselExampleCaptions {
+        width: 45%;
+        padding: 2%;
+    }
+
+    .immagineCarosello {
+        height: 20em;
+        border-radius: 15px;
+    }
+
+    /*SEZIONE BEST SELLER*/
+    .best-seller-section {
+        /*background: rgb(29,32,51);*/
+        background: linear-gradient(0deg, rgba(29,32,51,1) 44%, rgba(29,32,51,0) 100%);
+        margin: 0px 0px 0px 0px;
+        padding: 1em 1em 1em 4em;
+        font-family: "Quicksand", sans-serif;
+        height: auto;
+    }
+
+    .best-sellers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+    }
+
+    .best-seller-section h2 {
+        margin-bottom: 0px;
+        color: white;
+        font-size: 1.4em;
+    }
+
+    .best-seller-card {
+        margin: 1%;
+        padding: 0.4%;
+        height: 10em;
+        color: white;
+    }
+
+    .best-seller-card img {
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+        width: 80%;
+        border-radius: 40px;
+        margin-bottom: 7px;
+    }
+
+    .best-seller-card img:hover {
+        top: -10px;
+        cursor: pointer;
+    }
+
+    #best-sellers-1 {
+        height: auto;
+    }
+
+    #best-sellers-2 {
+        display: none;
+    }
+
+    .pulsanti {
+        margin-top: 15em;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .pulsanti button {
+        background-color: #1D2033;
+        border: 2px solid grey;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        margin: 5px;
+    }
+
+    .pulsanti button:focus {
+        outline: none;
+    }
+
+    .pulsanti button:hover {
+        border: 2px solid white;
+        background-color: #464958;
+    }
+
+    #first-slider {
+        height: 3px;
+        width: 15px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    #second-slider {
+        height: 3px;
+        width: 15px;
+        background-color: grey;
+        margin: 5px;
+    }
+
+    /*SEZIONE LISTA DI ALTRI GIOCHI*/
+    .filters {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        background-color: #1D2033;
+        padding-top: 20px;
+    }
+
+    .dropbtn {
+        background-color: #1D2033;
+        border: 2px solid grey;
+        color: white;
+        height: 35px;
+        width: fit-content + 200px;
+        border-radius: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1em;
+        margin: 5px;
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #1D2033;
+        /*min-width: 160px;*/
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        color: white;
+        border: 2px solid grey;
+        border-radius: 15px;
+        width: 200%;
+        margin-top: 7px;
+        padding: 15px;
+    }
+
+    .dropdown-content {
+        justify-content: space-between;
+    }
+
+    .dropdown-content label {
+        color: white;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #464958;
+    }
+
+    .filter-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .checkbox-column input[type=checkbox] {
+        border: 2px solid grey;
+        background-color: #1D2033;
+    }
+
+    .checkbox-column input[type=checkbox]:not(:checked) {
+        border: 2px solid grey;
+        background-color: #1D2033;
+    }
+
+    .checkbox-column input[type=checkbox]:checked {
+        color: white;
+        border: 2px solid #276AFC;
+        background-color: #1B4AB0;
+    }
+
+    #dropbtnplayer {
+        width: 120px;
+    }
+
+    #dropbtnrelease {
+        width: 150px;
+    }
+
+    .list-of-games {
+        margin-top: 0px;
+        padding-top: 40px;
+        background-color: #1D2033;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .game-card {
+        margin: 2em;
+    }
+
+    .game-card h4{
+        margin: 10px auto 5px auto;
+        font-family: "Abel", sans-serif;
+        font-size: 1em;
+    }
+
+    .game-card img{
+        position: relative;
+        top: 0px;
+        transition: top ease 0.5s;
+        height: 14em;
+        border-radius: 15px;
+    }
+
+    .game-card img:hover{
+        top: -10px;
+        cursor: pointer;
+    }
+
+    /*PARTE LATERALE SX DELLA WEB APP*/
+    .side-filters {
+        background-color: #171B2A;
+        width: 13%;
+        padding: 0.8em;
+
+    }
+
+    .research-bar-section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .research-bar {
+        border-radius: 10px;
+        width: 110%;
+    }
+
+    .research-bar::placeholder {
+        font-size: 0.9em;
+        color: grey;
+    }
+
+    /*INIZIO SEZIONE DETTAGLI*/
+    #main-details {
+        background-image: url("../images/maintheme3.jpg");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        width: 77%;
+        overflow-y: scroll;
+    }
+
+    #apex-main {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 2em;
+    }
+
+    #apex-details {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+    }
+
+    .gallery-section {
+        /*background: rgb(29,32,51);*/
+        background: linear-gradient(0deg, rgba(29,32,51,1) 44%, rgba(29,32,51,0) 100%);
+        margin: 0px 0px 0px 0px;
+        padding: 1em 1em 1em 4em;
+        font-family: "Quicksand", sans-serif;
+        height: auto;
+    }
+
+    .gallery-section h2 {
+        margin-bottom: 0px;
+        color: white;
+        font-size: 2em;
+        font-family: "PT Sans Narrow", sans-serif;
+    }
+
+    #carouselExampleCaptions {
+        width: 100%;
+        padding-left: 7em;
+        padding-right: 7em;
+    }
+
+    .carousel-inner {
+        text-align: center;
+    }
+
+    .carousel-item {
+        padding: 0 10px;
+    }
+    
+    .immagineCarosello {
+        margin: auto 2px auto 2px;
+        max-height: 250px; /* altezza massima delle immagini */
+        object-fit: contain; /* per mantenere l'aspetto originale dell'immagine */ 
+    }
+
+    .immagineCaroselloLaterale {
+        margin: auto 2px auto 2px;
+        max-height: 180px; /* altezza massima delle immagini */
+        object-fit: contain; /* per mantenere l'aspetto originale dell'immagine */ 
+        opacity: 0.5;
+        border-radius: 15px;
+    }
+
+    .list-of-details{
+        margin: 0px;
+        padding-top: 40px;
+        background-color: #1D2033;
+        color: white;
+        display: flex;
+    }
+
+    .panoramica {
+        margin: 5px;
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    .panoramica-sx{
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .simboli {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .classificazione-pegi {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-right: 10px;
+    }
+
+    .classificazione-pegi img {
+        max-height: 7em;
+        object-fit: contain;
+    }
+
+    .altri-pegi {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .altri-pegi img {
+        max-height: 4em;
+        object-fit: contain;
+    }
+
+    .final-info {
+        border-top: 1px solid #A8A8A8;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .final-info p {
+        color: #A8A8A8;
+        margin: 1px auto 1px auto;
+    }
+
+    .panoramica-dx{
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .dettagli {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    .dettagli p {
+        color: #A8A8A8;
+        font-size: 1em;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .dettagli button {
+        background-color: #1D2033;
+        border: 2px solid grey;
+        color: white;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    .separator {
+        margin:15px 0px 15px 0px;
+        border-top: 1px solid #A8A8A8;
+        opacity: 0.4;
+    }
+
+    .dettagli button:hover {
+        border: 2px solid white;
+        background-color: #464958;
+    }
+
+    .who-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .who-info h3{
+        font-size: larger;
+    }
+
+    .community-card {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #apex-card-sx-section {
+        background-color: #141724;
+        color: white;
+        height: 100%;
+        width: 30%;
+        padding: 1em;
+        margin: 0;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        height: 100%;
+    }
+
+    #apex-card-sx-section h2 {
+        font-family: "Oswald", sans-serif;
+    }
+
+    #apex-card-sx-section p {
+        margin-bottom: 0px;
+        font-family: "PT Sans Narrow", sans-serif;
+        font-size: 1.2em;
+    }
+
+    #apex-card-dx-section {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: url("../images/jointhecommunity.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 70%;
+    }
+
+    .show-requirements-in-column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .big-margin {
+        font-family: "Oswald", sans-serif;
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    .panoramica h4 {
+        font-size: 1.3em
+    }
+
+    .requisiti-minimi{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .requisiti-consigliati{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .requirements-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .requirements-info p {
+        color: #A8A8A8;
+        font-size: 1em;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .requirements-info h3 {
+        color: white;
+        font-size: 1em;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}

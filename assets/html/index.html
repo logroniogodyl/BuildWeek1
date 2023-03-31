@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Svilpppo di un e-commerce di videogames per la prima build week Epicode/Digitouch">
+    <title>Build Week 1 - Videogames E-Commerce Web Application</title>
+
+    <link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+	crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reem+Kufi+Fun">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+</head>
+
+<body>
+    <header class="top">
+        <h1>GG</h1>
+    </header>
+
+    <div class="content">
+        <!--START OF THE SIDE SECTION WITH NAVBAR AND LOGO AT THE BOTTOM-->
+        <div class="side-filters">
+
+            <div class="research-bar-section">
+                <form>
+                    <input type="text" class="research-bar" name="game-research-bar"
+                    placeholder="&nbsp Cerca giochi e add-on">
+                </form>
+            </div>
+
+        </div>
+
+        <!-- START OF THE CENTRAL SECTION-->
+        <div class="main">
+            <div src="structure-of-main">
+                <div class="main-game">                    
+                    <div class="description-of-game">
+                        <h2>Apex Legends</h2>
+                        <h3>Non perderti il battle royale del momento</h3>
+                        <p>Unisciti alle leggende in uno sparatutto adrenalinico e ottieni il titolo di Apex Legend</p>
+                        <a href="dettagli.html"><button type="button"><strong>SCOPRI</strong></button></a>
+                    </div>
+                </div>
+
+                <div class="best-seller-section">
+                    <div>
+                        <h2><strong>I migliori giochi</strong></h2>
+                    </div><br>
+
+                    <div id="best-sellers-1" class="best-sellers">
+                        
+                        <div class="best-seller-card">
+                            <img src="../images/copertinabestseller1.jpg">
+                            <h3><strong>Minaccia in arrivo</strong></h3>
+                            <p>Unisciti a Master Chief nella lotta contro i Precursori</p>
+                        </div>
+
+                        <div class="best-seller-card">
+                            <img src="../images/copertinabestseller2.jpg">
+                            <h3><strong>35 anni di football</strong></h3>
+                            <p>Scendi in campo con i migliori Hall of Famers di sempre</p>
+                        </div>
+
+                    </div>
+
+                    <div id="best-sellers-2" class="best-sellers">
+                    
+                        <div class="best-seller-card">
+                            <img src="../images/copertinabestseller4.jpg">
+                            <h3><strong>Crea il tuo sim</strong></h3>
+                            <p>Capricci, desideri, sogni: vivi la vita dei tuoi sogni</p>
+                        </div>
+
+                        <div class="best-seller-card">
+                            <img src="../images/copertinabestseller5.jpg">
+                            <h3><strong>Esplora Paldea</strong></h3>
+                            <p>Da solo o con gli amici, per la prima volta open world</p>
+                        </div>
+
+                    </div>
+
+                    <div class="pulsanti">
+                        <button type="button" onclick="showbest2()"><strong>></strong></button>
+                        <div id="second-slider"></div>
+                        <div id="first-slider"></div>
+                        <button type="button" onclick="showbest1()"><strong><</strong></button>
+                    </div>
+
+
+                </div>
+
+                <div class="filters">
+                    <div class="dropdown">
+                        <button class="dropbtn">Generi  &nbsp&nbsp<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <div class="filter-content">
+                                <div>
+                                    <label for="survival"> Survival </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="survival-genre" name="survival" value="Survival">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="fps"> FPS </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="fps-genre" name="fps" value="FPS">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="horror"> Horror </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="horror-genre" name="horror" value="Horror">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="sport"> Sport </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="sport-genre" name="sport" value="Sport">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="simulazione"> Simulazione </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="simulation-genre" name="simulazione" value="Simulazione">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn" id="dropbtnplayer">Giocatori  &nbsp&nbsp<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <div class="filter-content">
+                                <div>
+                                    <label for="singolo-giocatore"> Singolo giocatore </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="single-player" name="singolo-giocatore" value="Singolo giocatore">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="multigiocatore"> Multigiocatore </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="multiplayer" name="multigiocatore" value="Multigiocatore">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="online"> Online </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="online-multiplayer" name="online" value="Online">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Lingue  &nbsp&nbsp<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <div class="filter-content">
+                                <div>
+                                    <label for="italiano"> Italiano </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="italian-lang" name="italiano" value="Italiano">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="inglese"> Inglese </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="english-lang" name="inglese" value="Inglese">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="altro"> Altro </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="other-lang" name="altro" value="Altro">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn" id="dropbtnrelease">Release  &nbsp&nbsp<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <div class="filter-content">
+                                <div>
+                                    <label for="disponibile"> Disponibile </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="available" name="disponibile" value="Disponibile">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="in-anteprima"> In Anteprima </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="preview" name="in-anteprima" value="In Anteprima">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="pre-ordina"> Pre-Ordina </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="pre-order" name="pre-ordina" value="Pre-Ordina">
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="beta"> Beta </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="beta" name="beta" value="Beta">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Prezzo  &nbsp&nbsp<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <div class="filter-content">
+                                <div>
+                                    <label for="economico"> €. 0,00 - 29,99 </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="cheap-price" name="economico" value=29>
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="standard"> €. 30,00 - 59,00 </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="affordable-price" name="standard" value=60>
+                                </div>
+                            </div>
+                            <div class="filter-content">
+                                <div>
+                                    <label for="caro"> > €. 60,00 </label>
+                                </div>
+                                <div class="checkbox-column">
+                                    <input type="checkbox" id="expensive-price" name="caro" value=60>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="list-of-games">
+                    <div class="game-card">
+                        <img src="../images/game1.png">
+                        <h4><strong>Super Mario Odyssey</strong></h4>
+                        <p>€. 49,99</p>
+                    </div>
+                    
+                    <div class="game-card">
+                        <img src="../images/game2.png">
+                        <h4><strong>Spider-man: Miles Morales</strong></h4>
+                        <p>€. 69,00</p>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="../images/game3.png">
+                        <h4><strong>State of Decay 2</strong></h4>
+                        <p>€. 34,99</p>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="../images/game4.png">
+                        <h4><strong>Stray</strong></h4>
+                        <p>€. 49,00</p>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="../images/game5.png">
+                        <h4><strong>Fifa 23: Ultimate Edition</strong></h4>
+                        <p>€. 99,00</p>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="../images/game6.png">
+                        <h4><strong>Resident Evil 2 (Remastered)</strong></h4>
+                        <p>€. 64,99</p>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="../images/game7.png">
+                        <h4><strong>Final Fantasy XIII</strong></h4>
+                        <p>€. 19,00</p>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="../images/game8.png">
+                        <h4><strong>Total War: Warhammer III</strong></h4>
+                        <p>€. 54,99</p>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="../images/game9.png">
+                        <h4><strong>Hogwarts Legacy</strong></h4>
+                        <p>€. 79,00</p>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="../images/game10.png">
+                        <h4><strong>Horizon: Forbidden West</strong></h4>
+                        <p>€. 49,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-navbar">
+            <div class="navbar-button">
+                <a href="index.html"><img src="../images/home-icon.png"><p>Home</p></a>
+            </div>
+
+            <div class="navbar-button">
+                <a href="#"><img src="../images/sales-icon.png"><p>Offerte</p></a>
+            </div>
+
+            <div class="navbar-button">
+                <a href="#"><img src="../images/register-icon.png"><p>Registrati</p></a>
+            </div>
+
+            <div class="navbar-button">
+                <a href="#"><img src="../images/carrello-icona.png"><p>Carrello</p></a>
+            </div>
+
+            <div class="navbar-logo">
+                <img src="../images/icon-godyl-games.png">
+            </div>
+        </div>
+    </div>
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
