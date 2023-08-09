@@ -450,7 +450,7 @@
         margin: 0px 0px 0px 0px;
         padding: 1em 1em 1em 4em;
         font-family: "Quicksand", sans-serif;
-        height: auto;
+
     }
 
     .gallery-section h2 {
@@ -478,11 +478,13 @@
         margin: auto 2px auto 2px;
         max-height: 250px; /* altezza massima delle immagini */
         object-fit: contain; /* per mantenere l'aspetto originale dell'immagine */ 
+	
     }
 
     .immagineCaroselloLaterale {
         margin: auto 2px auto 2px;
         max-height: 180px; /* altezza massima delle immagini */
+	width: 30%;
         object-fit: contain; /* per mantenere l'aspetto originale dell'immagine */ 
         opacity: 0.5;
         border-radius: 15px;
